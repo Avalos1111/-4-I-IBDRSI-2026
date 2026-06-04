@@ -11,7 +11,7 @@ class Configuracion:
     # Base de datos
     SQLALCHEMY_DATABASE_URI = os.environ.get(
         'DATABASE_URL',
-        'mysql+pymysql://avnadmin:AVNS_WE9_KEHQsbc15PD5FHE@mysql-f382ebf-cbtis.b.aivencloud.com:26910/defaultdb'
+        'mysql+pymysql://avnadmin:AVNS_07ai4AG3vYKvMn1JyFK@mysql-119f85db-cbtis-31cf.b.aivencloud.com:17610/defaultdb?ssl-mode=REQUIRED'
     )
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_ENGINE_OPTIONS = {}
@@ -20,4 +20,4 @@ class Configuracion:
     SESSION_COOKIE_SECURE = os.environ.get('SESSION_COOKIE_SECURE', False)
     SESSION_COOKIE_HTTPONLY = True
     SESSION_COOKIE_SAMESITE = 'Lax'
-    PERMANENT_SESSION_LIFETIME = 3600  # 1 hora
+    PERMANENT_SESSION_LIFETIME = 3600 
